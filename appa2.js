@@ -86,16 +86,17 @@ document.addEventListener('DOMContentLoaded', () => {
             !squares[pacmanCurrentIndex -1].classList.contains('wall') &&
             !squares[pacmanCurrentIndex -1].classList.contains('ghost-lair')
             )
-            {
-            while(!squares[pacmanCurrentIndex -1].classList.contains('wall') &&
-                  !squares[pacmanCurrentIndex -1].classList.contains('ghost-lair')){
-              pacmanCurrentIndex -= 1
-              squares[pacmanCurrentIndex].classList.add('pac-man')
-              squares[pacmanCurrentIndex].classList.remove('pac-man')
-              setTimeout(function () {}, 2000*y);
-              y += 1
-            }
-            }
+            //{
+            //while(!squares[pacmanCurrentIndex -1].classList.contains('wall') &&
+            //      !squares[pacmanCurrentIndex -1].classList.contains('ghost-lair')){
+            //  pacmanCurrentIndex -= 1
+            //  squares[pacmanCurrentIndex].classList.add('pac-man')
+            //  squares[pacmanCurrentIndex].classList.remove('pac-man')
+            //  setTimeout(function () {}, 2000*y);
+            // y += 1
+            //}
+            //}
+            pacmanCurrentIndex -= 1
             
           if (squares[pacmanCurrentIndex -1] === squares[363]) {
             pacmanCurrentIndex = 391
